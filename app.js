@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+require('dotenv').config();
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -7,7 +8,6 @@ require('./lib/connectMongoose')
 const cors = require('cors');
 const config = require('./config');
 
-require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

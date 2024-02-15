@@ -1,5 +1,5 @@
 'use strict';
-
+const app = require('../app')
 const Tarea = require('../models/Tarea');
 const connection = require('../lib/connectMongoose');
 
